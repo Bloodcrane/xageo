@@ -4,10 +4,35 @@ button {
     border: none;
     height: 50px;
     width: 200px;
+    border-radius: 5cm;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     } 
 
-p {
-    color: rgb(36, 36, 36);
-    font-size: large;
-    font-family: 'Courier New', Courier, monospace;
+    button:hover {
+        background-color: rgb(238, 238, 238);
+        color: black;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        transform: scale(1.05);
+    }
+
+    button:active {
+        transform: scale(0.7);
+      }
+
+    body { background-color: rgb(31, 31, 31); }
+    h2 { color: rgb(117, 116, 143); transition: color 0.1s ease; }
+    h1 { color: rgb(174, 173, 177); transition: color 0.1s ease; }
+    P { color: rgb(112, 105, 121); transition: color 0.1s ease; }
+
+    p:hover {
+        color: aliceblue;
+    }
+
+    h1:hover {
+        color: rgb(195, 193, 201);;
+    }
+
+    h2:hover {
+        color: rgb(138, 136, 189);
     }
